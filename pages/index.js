@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 import { client } from '../libs/client'
 import styles from '../styles/Home.module.scss'
