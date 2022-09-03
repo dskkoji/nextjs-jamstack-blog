@@ -17,13 +17,16 @@ export default function Home({ blog }) {
   return (
     <div className={styles.container}>
       <h1>MicroCMS BLOG</h1>
-      {blog.map((blog) => (
+      {blog.map((blog) => {
+        return (
         <li key={blog.id}>
           <Link href={`/blog/${blog.id}`}>
             <a>{blog.title}</a>
           </Link>
         </li>
-      ))}
+      )
+    } 
+    )}
     </div>
   )
 }
